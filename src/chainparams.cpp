@@ -92,7 +92,9 @@ public:
         genesis.nBits    = 520159231; 
         genesis.nNonce   = 17112;
 
-        hashGenesisBlock = genesis.GetHash();             
+        hashGenesisBlock = genesis.GetHash(); 
+        printf("genises: %s \n", hashGenesisBlock);
+        printf("mekel: %s% \n" ,genesis.hashMerkleRoot);
         assert(hashGenesisBlock == uint256("0x0"));
         assert(genesis.hashMerkleRoot == uint256("0x2"));
 
