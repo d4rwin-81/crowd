@@ -92,11 +92,9 @@ public:
         genesis.nBits    = 520159231; 
         genesis.nNonce   = 17112;
 
-        hashGenesisBlock = genesis.GetHash();
-        LogPrintf("heshGen: invalid block=%s  ",hashGenesisBlock);
-        LogPrintf("heshGen: invalid block=%s  ",genesis.hashMerkleRoot);
-        assert(hashGenesisBlock == uint256("0x00000a336bf3e2be21c2ce9a3f9bc9849c697475d0de85e201bdc3452f3c343b"));
-        assert(genesis.hashMerkleRoot == uint256("0x281554338b643722b01ea689ab64db68d3e7897f50fdb3ac9ba0b30aeb1f1837"));
+        hashGenesisBlock = genesis.GetHash();             
+        assert(hashGenesisBlock == uint256("0x0"));
+        assert(genesis.hashMerkleRoot == uint256("0x2"));
 
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,27);
