@@ -93,8 +93,8 @@ public:
         genesis.nNonce   = 17112;
 
         hashGenesisBlock = genesis.GetHash(); 
-        assert(hashGenesisBlock == uint256("0x0"));
-        assert(genesis.hashMerkleRoot == uint256("0x2"));
+        //assert(hashGenesisBlock == uint256("0x0"));
+        //assert(genesis.hashMerkleRoot == uint256("0x2"));
 
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,27);
