@@ -96,7 +96,7 @@ void CActiveMasternode::ManageStatus()
             	return;
             }
 
-            /* rewards are not supported in crave.conf */
+            /* rewards are not supported in crowd.conf */
             CScript rewardAddress = CScript();
             int rewardPercentage = 0;
 

@@ -52,12 +52,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("Crave version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("crowd version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  craved [options]                     " + "\n" +
-                  "  craved [options] <command> [params]  " + _("Send command to -server or craved") + "\n" +
-                  "  craved [options] help                " + _("List commands") + "\n" +
-                  "  craved [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  crowdd [options]                     " + "\n" +
+                  "  crowdd [options] <command> [params]  " + _("Send command to -server or crowdd") + "\n" +
+                  "  crowdd [options] help                " + _("List commands") + "\n" +
+                  "  crowdd [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -67,7 +67,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "crave:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "crowd:"))
                 fCommandLine = true;
 
         if (fCommandLine)
