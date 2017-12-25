@@ -93,8 +93,6 @@ public:
         genesis.nNonce   = 17112;
 
         hashGenesisBlock = genesis.GetHash(); 
-        printf("genises: %s \n", hashGenesisBlock.c_str());
-        printf("mekel: %s% \n" ,genesis.hashMerkleRoot.c_str());
         assert(hashGenesisBlock == uint256("0x0"));
         assert(genesis.hashMerkleRoot == uint256("0x2"));
 
