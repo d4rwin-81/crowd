@@ -3213,7 +3213,7 @@ struct CImportingNow
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("crave-loadblk");
+    RenameThread("crowd-loadblk");
 
     CImportingNow imp;
 

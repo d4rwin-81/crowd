@@ -10,15 +10,15 @@ BOOST_SUFFIX?=-mgw49-mt-s-1_57
 
 INCLUDEPATHS= \
  -I"$(CURDIR)" \
- -I"d:/project/crave/include/boost-1_57" \
- -I"d:/project/crave/include/miniupnpc" \
- -I"d:/project/crave/include" \
- -I"d:/project/crave"
+ -I"d:/project/crowd/include/boost-1_57" \
+ -I"d:/project/crowd/include/miniupnpc" \
+ -I"d:/project/crowd/include" \
+ -I"d:/project/crowd"
 
 LIBPATHS= \
  -L"$(CURDIR)/leveldb" \
- -L"d:/project/crave/lib" \
- -L"d:/project/crave"
+ -L"d:/project/crowd/lib" \
+ -L"d:/project/crowd"
 
 LIBS= \
  -l leveldb \
@@ -126,7 +126,7 @@ ifeq (${USE_WALLET}, 1)
         obj/walletdb.o
 endif
 
-all: craved.exe
+all: crowdd.exe
 
 LIBS += $(CURDIR)/leveldb/libleveldb.a $(CURDIR)/leveldb/libmemenv.a -l shlwapi
 DEFS += $(addprefix -I,$(CURDIR)/leveldb/include)
@@ -142,12 +142,12 @@ obj/%.o: %.cpp $(HEADERS)
 obj/%.o: %.c $(HEADERS)
 	$(CXX) -c $(CFLAGS) -fpermissive -o $@ $<
 
-craved.exe: $(OBJS:obj/%=obj/%)
+crowdd.exe: $(OBJS:obj/%=obj/%)
 	g++ $(CFLAGS) $(LDFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
 
 clean:
 	-rm -f obj/*.o
-	-rm -f craved.exe
+	-rm -f crowdd.exe
 	-rm -f obj/build.h
 	cd leveldb && TARGET_OS=NATIVE_WINDOWS $(MAKE) clean && cd ..
 

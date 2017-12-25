@@ -66,7 +66,7 @@ void RPCExecutor::start()
 }
 
 /**
- * Split crave command line into a list of arguments. Aims to emulate \c bash and friends.
+ * Split crowd command line into a list of arguments. Aims to emulate \c bash and friends.
  *
  * - Arguments are delimited with whitespace
  * - Extra whitespace at the beginning and end and between arguments will be ignored

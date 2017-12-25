@@ -1041,7 +1041,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "crave";
+    const char* pszModule = "crowd";
 #endif
     if (pex)
         return strprintf(
@@ -1071,13 +1071,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Crave
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Crave
-    // Mac: ~/Library/Application Support/Crave
-    // Unix: ~/.crave
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Crowd
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Crowd
+    // Mac: ~/Library/Application Support/Crowd
+    // Unix: ~/.crowd
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Crave";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Crowd";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1089,10 +1089,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "Crave";
+    return pathRet / "Crowd";
 #else
     // Unix
-    return pathRet / ".crave";
+    return pathRet / ".crowd";
 #endif
 #endif
 }
@@ -1141,7 +1141,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "crave.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "crowd.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
@@ -1186,7 +1186,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "craved.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "crowdd.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }
