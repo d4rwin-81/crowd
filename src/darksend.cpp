@@ -407,7 +407,7 @@ void CDarksendPool::SetNull(){
 }
 
 bool CDarksendPool::SetCollateralAddress(std::string strAddress){
-    CcrowdcoinAddress address;
+    CCravecoinAddress address;
     if (!address.SetString(strAddress))
     {
         LogPrintf("CDarksendPool::SetCollateralAddress - Invalid DarkSend collateral address\n");
