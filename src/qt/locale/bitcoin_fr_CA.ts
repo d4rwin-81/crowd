@@ -2693,8 +2693,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or craved</source>
-        <translation>Envoyer commande à -server ou craved</translation>
+        <source>Send command to -server or crowdd</source>
+        <translation>Envoyer commande à -server ou crowdd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2713,13 +2713,13 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: crave.conf)</source>
-        <translation>Spécifier le fichier de configuration (defaut: crave.conf)</translation>
+        <source>Specify configuration file (default: crowd.conf)</source>
+        <translation>Spécifier le fichier de configuration (defaut: crowd.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: craved.pid)</source>
-        <translation>Spécifier le fichier pid (defaut: craved.pid)
+        <source>Specify pid file (default: crowdd.pid)</source>
+        <translation>Spécifier le fichier pid (defaut: crowdd.pid)
 </translation>
     </message>
     <message>
@@ -2737,7 +2737,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=craverpc
+rpcuser=crowdrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

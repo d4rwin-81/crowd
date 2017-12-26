@@ -67,7 +67,7 @@ struct MessageTableEntry
     }
 };
 
-/** Interface to Crave Secure Messaging from Qt view code. */
+/** Interface to Crowd Secure Messaging from Qt view code. */
 class MessageModel : public QAbstractTableModel
 {
     Q_OBJECT

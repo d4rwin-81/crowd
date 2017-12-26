@@ -43,7 +43,7 @@ SendCoinsDialog::SendCoinsDialog(QWidget *parent) :
 
 #if QT_VERSION >= 0x040700
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a Crave address (e.g. C8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)"));
+    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a Crowd address (e.g. BzHbXpjZZ8Mbk7ev8wxaqGUQ7REWejCVWM)"));
 #endif
 
     addEntry();
@@ -855,7 +855,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Crave address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Crowd address"));
         }
         else // Valid address
         {

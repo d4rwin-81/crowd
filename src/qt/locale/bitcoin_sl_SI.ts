@@ -2691,7 +2691,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or craved</source>
+        <source>Send command to -server or crowdd</source>
         <translation>Pošlji ukaz na -server ali blackoind</translation>
     </message>
     <message>
@@ -2711,13 +2711,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: crave.conf)</source>
-        <translation>Določi konfiguracijsko datoteko (privzeto: crave.conf)</translation>
+        <source>Specify configuration file (default: crowd.conf)</source>
+        <translation>Določi konfiguracijsko datoteko (privzeto: crowd.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: craved.pid)</source>
-        <translation>Določi pid datoteko (privzeto: crave.pid)</translation>
+        <source>Specify pid file (default: crowdd.pid)</source>
+        <translation>Določi pid datoteko (privzeto: crowd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2734,7 +2734,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=craverpc
+rpcuser=crowdrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

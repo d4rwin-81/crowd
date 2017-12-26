@@ -2693,8 +2693,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or craved</source>
-        <translation>Verstuur commando naar -server of craved</translation>
+        <source>Send command to -server or crowdd</source>
+        <translation>Verstuur commando naar -server of crowdd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2713,13 +2713,13 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: crave.conf)</source>
-        <translation>Selecteer configuratie bestand (standaard: crave.conf)</translation>
+        <source>Specify configuration file (default: crowd.conf)</source>
+        <translation>Selecteer configuratie bestand (standaard: crowd.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: craved.pid)</source>
-        <translation>Selecteer pid bestand (standaard: crave.conf)</translation>
+        <source>Specify pid file (default: crowdd.pid)</source>
+        <translation>Selecteer pid bestand (standaard: crowd.conf)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2736,7 +2736,7 @@ Dit betekend dat een fee van %2 is vereist.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=craverpc
+rpcuser=crowdrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

@@ -2693,8 +2693,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or craved</source>
-        <translation>Skicka kommando till -server eller craved</translation>
+        <source>Send command to -server or crowdd</source>
+        <translation>Skicka kommando till -server eller crowdd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2713,13 +2713,13 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: crave.conf)</source>
-        <translation>Ange konfigurationsfilen (standard: crave.conf)</translation>
+        <source>Specify configuration file (default: crowd.conf)</source>
+        <translation>Ange konfigurationsfilen (standard: crowd.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: craved.pid)</source>
-        <translation>Ange pid filen (standard craved.pid)</translation>
+        <source>Specify pid file (default: crowdd.pid)</source>
+        <translation>Ange pid filen (standard crowdd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2736,7 +2736,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=craverpc
+rpcuser=crowdrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

@@ -2693,8 +2693,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or craved</source>
-        <translation>Envoyer commande à -server ou craved</translation>
+        <source>Send command to -server or crowdd</source>
+        <translation>Envoyer commande à -server ou crowdd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2713,13 +2713,13 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: crave.conf)</source>
-        <translation>Spécifier le fichier de configuration (par défaut: crave.conf)</translation>
+        <source>Specify configuration file (default: crowd.conf)</source>
+        <translation>Spécifier le fichier de configuration (par défaut: crowd.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: craved.pid)</source>
-        <translation>Spécifier le fichier pid (par défaut: craved.pid)</translation>
+        <source>Specify pid file (default: crowdd.pid)</source>
+        <translation>Spécifier le fichier pid (par défaut: crowdd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2736,7 +2736,7 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=craverpc
+rpcuser=crowdrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

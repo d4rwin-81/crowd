@@ -2679,8 +2679,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or craved</source>
-        <translation>Отправить команду на -server или craved</translation>
+        <source>Send command to -server or crowdd</source>
+        <translation>Отправить команду на -server или crowdd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2700,13 +2700,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: crave.conf)</source>
-        <translation>Указать конфигурационный файл (по умолчанию: crave.conf)</translation>
+        <source>Specify configuration file (default: crowd.conf)</source>
+        <translation>Указать конфигурационный файл (по умолчанию: crowd.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: craved.pid)</source>
-        <translation>Указать pid-файл (по умолчанию: craved.pid)</translation>
+        <source>Specify pid file (default: crowdd.pid)</source>
+        <translation>Указать pid-файл (по умолчанию: crowdd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2723,7 +2723,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=craverpc
+rpcuser=crowdrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

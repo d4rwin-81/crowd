@@ -2689,8 +2689,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or craved</source>
-        <translation>Enviar comandes a -server o craved</translation>
+        <source>Send command to -server or crowdd</source>
+        <translation>Enviar comandes a -server o crowdd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2709,13 +2709,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: crave.conf)</source>
-        <translation>Especifiqueu el fitxer de configuració (per defecte: crave.conf)</translation>
+        <source>Specify configuration file (default: crowd.conf)</source>
+        <translation>Especifiqueu el fitxer de configuració (per defecte: crowd.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: craved.pid)</source>
-        <translation>Especificar arxiu pid (per defecte: craved.pid)</translation>
+        <source>Specify pid file (default: crowdd.pid)</source>
+        <translation>Especificar arxiu pid (per defecte: crowdd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2732,7 +2732,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=craverpc
+rpcuser=crowdrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

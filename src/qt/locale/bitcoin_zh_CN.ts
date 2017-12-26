@@ -2691,8 +2691,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or craved</source>
-        <translation>向-server服务器或craved发送命令</translation>
+        <source>Send command to -server or crowdd</source>
+        <translation>向-server服务器或crowdd发送命令</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2714,13 +2714,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: crave.conf)</source>
-        <translation>指定配置文件(默认: crave.conf)</translation>
+        <source>Specify configuration file (default: crowd.conf)</source>
+        <translation>指定配置文件(默认: crowd.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: craved.pid)</source>
-        <translation>指定pid文件(默认: craved.pid)</translation>
+        <source>Specify pid file (default: crowdd.pid)</source>
+        <translation>指定pid文件(默认: crowdd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2738,7 +2738,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=craverpc
+rpcuser=crowdrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2749,7 +2749,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Crave Alert&quot; admin@foo.co
         <translation>%s, 必须在配置文件里设置rpc密码:
  %s
 建议使用如下的随机密码:
-rpcuser=craverpc
+rpcuser=crowdrpc
 rpcpassword=%s
 (不需要记住该密码)
 用户名和密码不能重复。
