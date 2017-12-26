@@ -104,7 +104,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
-        vSeeds.push_back(CDNSSeedData("0",  "dns0.mycrowd.xyz"));
+        vSeeds.push_back(CDNSSeedData("0",  "euve259199.serverprofi24.de"));
         vSeeds.push_back(CDNSSeedData("1",  "dns1.mycrowd.xyz"));
         vSeeds.push_back(CDNSSeedData("2",  "dns2.mycrowd.xyz"));
         vSeeds.push_back(CDNSSeedData("3",  "dns3.mycrowd.xyz"));

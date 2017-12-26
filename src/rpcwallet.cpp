@@ -577,7 +577,7 @@ Value getreceivedbyaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "getreceivedbyaddress \"craveaddress\" ( minconf )\n"
+            "getreceivedbyaddress \"crowdaddress\" ( minconf )\n"
             "\nReturns the total amount received by the given crowdaddress in transactions with at least minconf confirmations.\n"
             "\nArguments:\n"
             "1. \"crowdaddress\"  (string, required) The Crowd address for transactions.\n"
