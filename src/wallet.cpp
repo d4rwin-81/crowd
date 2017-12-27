@@ -3306,7 +3306,7 @@ uint64_t CWallet::GetStakeWeight() const
     int64_t nBalance = GetBalance();
 
     if (nBalance <= nReserveBalance)        
-        return 1;
+        return 0;
 
     vector<const CWalletTx*> vwtxPrev;
 
