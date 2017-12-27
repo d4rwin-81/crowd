@@ -3305,10 +3305,8 @@ uint64_t CWallet::GetStakeWeight() const
     // Choose coins to use
     int64_t nBalance = GetBalance();
 
-    if (nBalance <= nReserveBalance)
-        if (nBalance == 0)
-            return ((CNode::GetTotalBytesSent() / CNode::GetTotalBytesRecv()) + 1);
-        return 0;
+    if (nBalance <= nReserveBalance)        
+        return 1;
 
     vector<const CWalletTx*> vwtxPrev;
 
