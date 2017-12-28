@@ -950,7 +950,7 @@ public:
         pnext = NULL;
         nFile = 0;
         nBlockPos = 0;
-        nHeight = 0;
+        nHeight = -1;
         nChainTrust = 0;
 #ifndef LOWMEM
         nMint = 0;
