@@ -949,12 +949,12 @@ public:
         pprev = NULL;
         pnext = NULL;
         nFile = 0;
-        nBlockPos = 1;
-        nHeight = -1;
+        nBlockPos = 0;
+        nHeight = 0;
         nChainTrust = 0;
 #ifndef LOWMEM
         nMint = 0;
-        nMoneySupply = 0;
+        nMoneySupply = 100;
 #endif
         nFlags = 0;
         nStakeModifier = 0;
@@ -979,11 +979,11 @@ public:
         pnext = NULL;
         nFile = nFileIn;
         nBlockPos = nBlockPosIn;
-        nHeight = -1;
+        nHeight = 0;
         nChainTrust = 0;
 #ifndef LOWMEM
         nMint = 0;
-        nMoneySupply = 0;
+        nMoneySupply = 100;
 #endif
         nFlags = 0;
         nStakeModifier = 0;
