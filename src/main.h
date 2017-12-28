@@ -949,7 +949,7 @@ public:
         pprev = NULL;
         pnext = NULL;
         nFile = 0;
-        nBlockPos = 0;
+        nBlockPos = 1;
         nHeight = -1;
         nChainTrust = 0;
 #ifndef LOWMEM
@@ -979,7 +979,7 @@ public:
         pnext = NULL;
         nFile = nFileIn;
         nBlockPos = nBlockPosIn;
-        nHeight = 0;
+        nHeight = -1;
         nChainTrust = 0;
 #ifndef LOWMEM
         nMint = 0;
