@@ -1355,6 +1355,7 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 {
+    
     int64_t nSubsidy = 10 * COIN;
 
     return nSubsidy + nFees;
@@ -1365,8 +1366,33 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees)
 {
     int64_t varNetProvide = (CNode::GetTotalBytesSent() / CNode::GetTotalBytesRecv()) + 1;
-    int64_t nSubsidy = STATIC_POS_REWARD;
-    return nSubsidy + nFees;
+    switch (nHeight) {
+        // 1440 Blocks am Tag
+        case <= 2880:
+            int64_t nSubsidy = 0;
+            break
+        case <= 43200:
+            // ersten 30 Tage
+            int64_t nSubsidy = 50 * COIN;
+            // 2.160.000 CROWD
+            break;
+        case <= 172800:
+            //ersten 4 Monate
+            int64_t nSubsidy = 25 * COIN;
+            // 3.240.000 CROWD
+            break;
+        case <= 518400:
+            //erstes Jahr
+            int64_t nSubsidy = 10 * COIN;
+            break;
+        case > 518400:
+            int64_t nSubsidy = STATIC_POS_REWARD;
+            break;
+        default:
+            int64_t nSubsidy = STATIC_POS_REWARD;            
+    }
+    //int64_t nSubsidy = STATIC_POS_REWARD;
+    return (nSubsidy + nFees) * varNetProvide;
 }
 
 static int64_t nTargetTimespan = 24 * 60;  // 10 mins

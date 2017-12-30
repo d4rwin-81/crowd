@@ -954,7 +954,7 @@ public:
         nChainTrust = 0;
 #ifndef LOWMEM
         nMint = 0;
-        nMoneySupply = 100;
+        nMoneySupply = 0;
 #endif
         nFlags = 0;
         nStakeModifier = 0;
@@ -983,7 +983,7 @@ public:
         nChainTrust = 0;
 #ifndef LOWMEM
         nMint = 0;
-        nMoneySupply = 100;
+        nMoneySupply = 0;
 #endif
         nFlags = 0;
         nStakeModifier = 0;
