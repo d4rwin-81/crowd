@@ -1366,30 +1366,31 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees, int nHeight)
 {
     int64_t varNetProvide = (CNode::GetTotalBytesSent() / CNode::GetTotalBytesRecv()) + 1;
+    int64_t nSubsidy = STATIC_POS_REWARD;
     switch (nHeight) {
         // 1440 Blocks am Tag
         case nHeight <= 2880:
-            int64_t nSubsidy = 0;
+            nSubsidy = 0;
             break;
         case nHeight <= 43200:
             // ersten 30 Tage
-            int64_t nSubsidy = 50 * COIN;
+            nSubsidy = 50 * COIN;
             // 2.160.000 CROWD
             break;
         case nHeight <= 172800:
             //ersten 4 Monate
-            int64_t nSubsidy = 25 * COIN;
+            nSubsidy = 25 * COIN;
             // 3.240.000 CROWD
             break;
         case nHeight <= 518400:
             //erstes Jahr
-            int64_t nSubsidy = 10 * COIN;
+            nSubsidy = 10 * COIN;
             break;
         case nHeight > 518400:
-            int64_t nSubsidy = STATIC_POS_REWARD;
+            nSubsidy = STATIC_POS_REWARD;
             break;
         default:
-            int64_t nSubsidy = STATIC_POS_REWARD;            
+            nSubsidy = STATIC_POS_REWARD;            
     }
     //int64_t nSubsidy = STATIC_POS_REWARD;
     return (nSubsidy + nFees) * varNetProvide;
