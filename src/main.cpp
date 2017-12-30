@@ -1363,14 +1363,14 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 }
 
 // miner's coin stake reward
-int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees)
+int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees, int nHeight)
 {
     int64_t varNetProvide = (CNode::GetTotalBytesSent() / CNode::GetTotalBytesRecv()) + 1;
     switch (nHeight) {
         // 1440 Blocks am Tag
         case <= 2880:
             int64_t nSubsidy = 0;
-            break
+            break;
         case <= 43200:
             // ersten 30 Tage
             int64_t nSubsidy = 50 * COIN;
@@ -1982,7 +1982,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
         if (!vtx[1].GetCoinAge(txdb, pindex->pprev, nCoinAge))
             return error("ConnectBlock() : %s unable to get coin age for coinstake", vtx[1].GetHash().ToString());
 
-        int64_t nCalculatedStakeReward = GetProofOfStakeReward(pindex->pprev, nCoinAge, nFees);
+        int64_t nCalculatedStakeReward = GetProofOfStakeReward(pindex->pprev, nCoinAge, nFees, pindex->nHeight);
 
         if (nStakeReward > nCalculatedStakeReward)
             return DoS(100, error("ConnectBlock() : coinstake pays too much(actual=%d vs calculated=%d)", nStakeReward, nCalculatedStakeReward));
