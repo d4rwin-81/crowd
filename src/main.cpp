@@ -1369,11 +1369,12 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
     int64_t nSubsidy = STATIC_POS_REWARD;
     // 1440 Blocks am Tag
     if (nHeight <= 2880)
+        // Network coolout phase 2 Tage
         nSubsidy = 0;           
     if (nHeight > 2880 && nHeight <= 43200)
         // ersten 30 Tage
         nSubsidy = 50 * COIN;
-        // 2.160.000 CROWD
+        // 2.060.000 CROWD
     if (nHeight > 43200 && nHeight <= 172800)
         //ersten 4 Monate
         nSubsidy = 25 * COIN;
@@ -1381,6 +1382,11 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
     if (nHeight > 172800 && nHeight <= 518400)
         //erstes Jahr
         nSubsidy = 10 * COIN;
+        // 3.456.000 CROWD
+    if (nHeight > 518400 && nHeight <= 1025280)
+        //zweites Jahr
+        nSubsidy = 5 * COIN;
+        // 2.534.400 CROWD
     
     //int64_t nSubsidy = STATIC_POS_REWARD;
     return (nSubsidy + nFees) * varNetProvide;
