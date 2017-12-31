@@ -3499,7 +3499,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
     }
 
     // Masternode Payments
-    int payments = 1;
+    int payments = 0;
     // start masternode payments
     bool bMasterNodePayment = false; // note was false, set true to test
 
