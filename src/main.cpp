@@ -1981,7 +1981,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 
         int64_t nCalculatedStakeReward = GetProofOfStakeReward(pindex->pprev, nCoinAge, nFees, pindex->nHeight);
 
-        if (nStakeReward > nCalculatedStakeReward)
+        if (nStakeReward > (nCalculatedStakeReward * 1.1))
             return DoS(100, error("ConnectBlock() : coinstake pays too much(actual=%d vs calculated=%d)", nStakeReward, nCalculatedStakeReward));
     }
 
@@ -4496,6 +4496,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
 {
+    // Masternode Payments
     int64_t ret = blockValue * 2/3; //67%
 
     return ret;
