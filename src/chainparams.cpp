@@ -94,7 +94,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();         
         assert(hashGenesisBlock == uint256("0x571ab6ce923345589e2ea58e677de6f6802b21f501db78f60df2fc4946c1b2ad"));
-        //assert(genesis.hashMerkleRoot == uint256("0x2"));
+        assert(genesis.hashMerkleRoot == uint256("0xc05d190df7b94bbeb0541cc88a4a513fc661a26e815b00c21f2f470f7484431a"));
 
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,27);
@@ -105,7 +105,7 @@ public:
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
         vSeeds.push_back(CDNSSeedData("0",  "euve259199.serverprofi24.de"));
-        vSeeds.push_back(CDNSSeedData("1",  "dns1.mycrowd.xyz"));
+        vSeeds.push_back(CDNSSeedData("1",  "euve259851.serverprofi24.de"));
         vSeeds.push_back(CDNSSeedData("2",  "dns2.mycrowd.xyz"));
         vSeeds.push_back(CDNSSeedData("3",  "dns3.mycrowd.xyz"));
         vSeeds.push_back(CDNSSeedData("4",  "dns4.mycrowd.xyz"));
