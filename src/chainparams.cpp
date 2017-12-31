@@ -106,7 +106,7 @@ public:
 
         vSeeds.push_back(CDNSSeedData("0",  "euve259199.serverprofi24.de"));
         vSeeds.push_back(CDNSSeedData("1",  "euve259851.serverprofi24.de"));
-        vSeeds.push_back(CDNSSeedData("2",  "dns2.mycrowd.xyz"));
+        vSeeds.push_back(CDNSSeedData("2",  "euve259864.serverprofi24.de"));
         vSeeds.push_back(CDNSSeedData("3",  "dns3.mycrowd.xyz"));
         vSeeds.push_back(CDNSSeedData("4",  "dns4.mycrowd.xyz"));
         vSeeds.push_back(CDNSSeedData("5",  "dns5.mycrowd.xyz"));
