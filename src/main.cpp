@@ -1389,7 +1389,7 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
         // 2.534.400 CROWD
     
     //int64_t nSubsidy = STATIC_POS_REWARD;
-    return (nSubsidy + nFees) * varNetProvide;
+    return nSubsidy + nFees;
 }
 
 static int64_t nTargetTimespan = 24 * 60;  // 10 mins
